@@ -12,7 +12,10 @@ const Navbar = (props) => {
   const pathname = location.pathname;
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
+    <nav
+      className="navbar navbar-expand-lg navbar-dark"
+      style={{ backgroundColor: "#a89dea" }}
+    >
       <div className="container-fluid">
         <Link to="/" className="navbar-brand">
           zNova

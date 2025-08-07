@@ -8,17 +8,23 @@ export const CartItem = (props) => {
     useContext(CartContext);
 
   return (
-    <div className="card mb-3" style={{ maxWidth: "540px" }}>
+    <div
+      className="card mb-3"
+      style={{
+        maxWidth: "540px",
+        backgroundColor: "#382d80ff",
+      }}
+    >
       <div className="row g-0">
-        <div className="col-md-4">
+        <div className="col-md-4 ">
           <img
             src={productImage}
             className="img-fluid rounded-start"
             alt={productName}
           />
         </div>
-        <div className="col-md-8">
-          <div className="card-body">
+        <div className="col-md-8 ">
+          <div className="card-body ">
             <h5 className="card-title">{productName}</h5>
             <p className="card-text">${price}</p>
             <div className="card-text">
