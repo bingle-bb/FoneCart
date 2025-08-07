@@ -9,14 +9,14 @@ export const CartItem = (props) => {
 
   return (
     <div
-      className="card mb-3"
+      className="card mb-0"
       style={{
-        maxWidth: "540px",
-        backgroundColor: "#382d80ff",
+        maxWidth: "370px",
+        backgroundColor: "#d5c9f9",
       }}
     >
       <div className="row g-0">
-        <div className="col-md-4 ">
+        <div className="col-md-3 ">
           <img
             src={productImage}
             className="img-fluid rounded-start"
@@ -37,6 +37,9 @@ export const CartItem = (props) => {
                   -
                 </button>
                 <input
+                  style={{
+                    backgroundColor: "#ebe5fcd2",
+                  }}
                   type="text"
                   className="form-control"
                   value={qty}

@@ -10,9 +10,9 @@ export const Cart = () => {
 
   const navigate = useNavigate();
   return (
-    <div className="cart" style={{ margin: "10px" }}>
-      <div className="cart-title">
-        <h3>Your Cart Items</h3>
+    <div className="cart" style={{ margin: "20px" }}>
+      <div className="cart-title  ">
+        <h3 className="fw-bold">Your Cart Items</h3>
       </div>
       <div className="d-flex flex-row gap-2">
         <div className="d-flex flex-wrap gap-2">
@@ -23,12 +23,27 @@ export const Cart = () => {
             );
           })}
         </div>
-        <div className="cart-info d-flex flex-column gap-2">
-          Subtotal: ${totalAmount}
-          <button className="btn btn-primary">Checkout</button>
-          <button className="btn btn-primary" onClick={() => navigate("/")}>
-            Continue Shopping
-          </button>
+        <div className="me-4">
+          <div className="cart-info d-flex flex-column gap-1 ">
+            Subtotal: ${totalAmount}
+            <button
+              className="btn "
+              style={{
+                backgroundColor: "#a89dea",
+              }}
+            >
+              Checkout
+            </button>
+            <button
+              className="btn "
+              style={{
+                backgroundColor: "#a89dea",
+              }}
+              onClick={() => navigate("/")}
+            >
+              Continue Shopping
+            </button>
+          </div>
         </div>
       </div>
     </div>

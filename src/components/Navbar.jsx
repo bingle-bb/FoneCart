@@ -16,9 +16,9 @@ const Navbar = (props) => {
       className="navbar navbar-expand-lg navbar-dark"
       style={{ backgroundColor: "#a89dea" }}
     >
-      <div className="container-fluid">
+      <div className="container-fluid fw-light ">
         <Link to="/" className="navbar-brand">
-          zNova
+          Fone Cart
         </Link>
         <button
           className="navbar-toggler"
@@ -49,7 +49,9 @@ const Navbar = (props) => {
               >
                 Cart{" "}
                 {totalItemCount > 0 && (
-                  <span className="badge text-bg-light">{totalItemCount}</span>
+                  <span className="badge text-bg-secondary">
+                    {totalItemCount}
+                  </span>
                 )}
               </Link>
             </li>
@@ -62,7 +64,7 @@ const Navbar = (props) => {
               >
                 Favourite{" "}
                 {favouriteIds.length > 0 && (
-                  <span className="badge bg-secondary">
+                  <span className="badge  text-bg-secondary">
                     {favouriteIds.length}
                   </span>
                 )}
