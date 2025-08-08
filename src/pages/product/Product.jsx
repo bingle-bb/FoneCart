@@ -12,7 +12,7 @@ export const Product = (props) => {
   const favouriteId = favouriteIds.find((fid) => fid === id);
   return (
     <div
-      className="card d-flex flex-column"
+      className="card d-flex flex-column "
       style={{
         width: "18rem",
         height: "25rem",
